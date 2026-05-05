@@ -1,0 +1,627 @@
+2026-05-02 11:38:06,621 | INFO | __main__ | Chargement du dataset...
+2026-05-02 11:38:06,622 | ERROR | __main__ | Fichier introuvable : data\marketing_and_sales.csv
+2026-05-02 11:38:46,088 | INFO | __main__ | Chargement du dataset...
+2026-05-02 11:38:46,088 | ERROR | __main__ | Fichier introuvable : data\marketing_and_sales.csv
+2026-05-02 11:39:27,507 | INFO | __main__ | Chargement du dataset...
+2026-05-02 11:39:27,525 | INFO | __main__ | Dataset chargé avec succès
+2026-05-02 11:39:27,527 | INFO | __main__ | Shape du dataset : (4572, 5)
+2026-05-02 11:39:27,527 | INFO | __main__ | Colonnes détectées : ['TV', 'Radio', 'Social Media', 'Influencer', 'Sales']
+2026-05-02 11:39:27,527 | INFO | __main__ | Validation des colonnes attendues...
+2026-05-02 11:39:27,529 | INFO | __main__ | Toutes les colonnes attendues sont présentes
+2026-05-02 11:39:27,529 | INFO | __main__ | Analyse des valeurs manquantes...
+2026-05-02 11:39:27,532 | INFO | __main__ | Valeurs manquantes par colonne :
+TV              10
+Radio            4
+Social Media     6
+Influencer       0
+Sales            6
+dtype: int64
+2026-05-02 11:39:27,532 | INFO | __main__ | Analyse des types de variables...
+2026-05-02 11:39:27,533 | INFO | __main__ | Types détectés :
+TV              float64
+Radio           float64
+Social Media    float64
+Influencer       object
+Sales           float64
+dtype: object
+2026-05-02 11:39:27,533 | INFO | __main__ | Aperçu statistique des variables numériques...
+2026-05-02 11:39:27,554 | INFO | __main__ | 
+                TV        Radio  Social Media        Sales
+count  4562.000000  4568.000000   4566.000000  4566.000000
+mean     54.066857    18.160356      3.323956   192.466602
+std      26.125054     9.676958      2.212670    93.133092
+min      10.000000     0.000684      0.000031    31.199409
+25%      32.000000    10.525957      1.527849   112.322882
+50%      53.000000    17.859513      3.055565   189.231172
+75%      77.000000    25.649730      4.807558   272.507922
+max     100.000000    48.871161     13.981662   364.079751
+2026-05-02 11:39:27,554 | INFO | __main__ | Étape 1 terminée avec succès
+2026-05-02 11:43:30,335 | INFO | __main__ | Chargement du dataset...
+2026-05-02 11:43:30,345 | INFO | __main__ | Dataset chargé avec succès
+2026-05-02 11:43:30,346 | INFO | __main__ | Shape du dataset : (4572, 5)
+2026-05-02 11:43:30,346 | INFO | __main__ | Colonnes détectées : ['TV', 'Radio', 'Social Media', 'Influencer', 'Sales']
+2026-05-02 11:43:30,346 | INFO | __main__ | Toutes les colonnes attendues sont présentes
+2026-05-02 11:43:30,348 | INFO | __main__ | Valeurs manquantes par colonne :
+TV              10
+Radio            4
+Social Media     6
+Influencer       0
+Sales            6
+dtype: int64
+2026-05-02 11:43:30,357 | INFO | __main__ | Nombre de doublons : 0
+2026-05-02 11:43:30,358 | INFO | __main__ | Types détectés :
+TV              float64
+Radio           float64
+Social Media    float64
+Influencer       object
+Sales           float64
+dtype: object
+2026-05-02 11:43:30,358 | INFO | __main__ | Nettoyage des données...
+2026-05-02 11:43:30,361 | INFO | __main__ | Doublons supprimés : 0
+2026-05-02 11:43:30,366 | INFO | __main__ | Valeurs manquantes avant suppression : 26
+2026-05-02 11:43:30,370 | INFO | __main__ | Valeurs manquantes après nettoyage : 0
+2026-05-02 11:43:30,371 | INFO | __main__ | Shape après nettoyage : (4546, 5)
+2026-05-02 11:43:30,371 | INFO | __main__ | Séparation features / target...
+2026-05-02 11:43:30,372 | INFO | __main__ | Split train/test en cours...
+2026-05-02 11:43:30,375 | INFO | __main__ | X_train shape : (3636, 4)
+2026-05-02 11:43:30,376 | INFO | __main__ | X_test shape : (910, 4)
+2026-05-02 11:43:30,376 | INFO | __main__ | y_train shape : (3636,)
+2026-05-02 11:43:30,377 | INFO | __main__ | y_test shape : (910,)
+2026-05-02 11:43:30,377 | INFO | __main__ | Construction du pipeline de preprocessing...
+2026-05-02 11:43:30,377 | INFO | __main__ | Pipeline de preprocessing construit avec succès
+2026-05-02 11:43:30,377 | INFO | __main__ | Test du preprocessing sur X_train...
+2026-05-02 11:43:30,390 | INFO | __main__ | Shape après preprocessing : (3636, 7)
+2026-05-02 11:43:30,390 | INFO | __main__ | Preprocessing testé avec succès
+2026-05-02 11:43:30,390 | INFO | __main__ | Sauvegarde des fichiers intermédiaires...
+2026-05-02 11:43:30,437 | INFO | __main__ | Fichiers sauvegardés dans data/processed/
+2026-05-02 11:43:30,438 | INFO | __main__ | Preprocessor sauvegardé dans models/preprocessor.pkl
+2026-05-02 11:43:30,438 | INFO | __main__ | Étape 2 terminée avec succès
+2026-05-02 11:50:32,285 | INFO | __main__ | Chargement des données train/test...
+2026-05-02 11:50:32,372 | INFO | __main__ | X_train : (3636, 4)
+2026-05-02 11:50:32,373 | INFO | __main__ | X_test : (910, 4)
+2026-05-02 11:50:32,373 | INFO | __main__ | Initialisation des modèles...
+2026-05-02 11:50:32,374 | INFO | __main__ | Entraînement du modèle : Linear Regression
+2026-05-02 11:50:32,374 | INFO | src.data_preprocessing | Construction du pipeline de preprocessing...
+2026-05-02 11:50:32,374 | INFO | src.data_preprocessing | Pipeline de preprocessing construit avec succès
+2026-05-02 11:50:32,415 | INFO | __main__ | Linear Regression | MAE=2.3129 | RMSE=2.8849 | R2=0.9990
+2026-05-02 11:50:32,415 | INFO | __main__ | Entraînement du modèle : Random Forest
+2026-05-02 11:50:32,416 | INFO | src.data_preprocessing | Construction du pipeline de preprocessing...
+2026-05-02 11:50:32,417 | INFO | src.data_preprocessing | Pipeline de preprocessing construit avec succès
+2026-05-02 11:50:34,348 | INFO | __main__ | Random Forest | MAE=2.7130 | RMSE=3.3447 | R2=0.9987
+2026-05-02 11:50:34,349 | INFO | __main__ | Entraînement du modèle : Gradient Boosting
+2026-05-02 11:50:34,349 | INFO | src.data_preprocessing | Construction du pipeline de preprocessing...
+2026-05-02 11:50:34,349 | INFO | src.data_preprocessing | Pipeline de preprocessing construit avec succès
+2026-05-02 11:50:34,734 | INFO | __main__ | Gradient Boosting | MAE=2.3628 | RMSE=2.9533 | R2=0.9990
+2026-05-02 11:50:34,735 | INFO | __main__ | Entraînement du modèle : MLP Regressor
+2026-05-02 11:50:34,735 | INFO | src.data_preprocessing | Construction du pipeline de preprocessing...
+2026-05-02 11:50:34,735 | INFO | src.data_preprocessing | Pipeline de preprocessing construit avec succès
+2026-05-02 11:50:37,023 | INFO | __main__ | MLP Regressor | MAE=2.3734 | RMSE=2.9709 | R2=0.9990
+2026-05-02 11:50:37,031 | INFO | __main__ | Comparaison sauvegardée : reports/model_comparison.csv
+2026-05-02 11:50:37,032 | INFO | __main__ | Meilleur modèle : Linear Regression
+2026-05-02 11:50:37,032 | INFO | __main__ | Meilleur modèle sauvegardé : models/best_model.pkl
+2026-05-02 11:50:37,040 | INFO | __main__ | Résultats finaux :
+2026-05-02 11:50:37,047 | INFO | __main__ | 
+               model       MAE      RMSE        R2
+0  Linear Regression  2.312857  2.884904  0.999010
+2  Gradient Boosting  2.362799  2.953347  0.998963
+3      MLP Regressor  2.373428  2.970915  0.998951
+1      Random Forest  2.712993  3.344666  0.998670
+2026-05-02 11:50:37,047 | INFO | __main__ | Étape 3 terminée avec succès
+2026-05-02 11:52:18,341 | INFO | __main__ | Chargement des données de test et du meilleur modèle...
+2026-05-02 11:52:18,360 | INFO | __main__ | X_test shape : (910, 4)
+2026-05-02 11:52:18,361 | INFO | __main__ | Modèle chargé avec succès
+2026-05-02 11:52:18,361 | INFO | __main__ | Évaluation du meilleur modèle...
+2026-05-02 11:52:18,371 | INFO | __main__ | MAE : 2.3129
+2026-05-02 11:52:18,371 | INFO | __main__ | RMSE : 2.8849
+2026-05-02 11:52:18,371 | INFO | __main__ | R2 : 0.9990
+2026-05-02 11:52:18,379 | INFO | __main__ | Prédictions sauvegardées : reports/best_model_predictions.csv
+2026-05-02 11:52:18,379 | INFO | __main__ | Création du graphique valeurs réelles vs valeurs prédites...
+2026-05-02 11:52:19,895 | INFO | __main__ | Graphique sauvegardé : reports/figures/real_vs_predicted.png
+2026-05-02 11:52:19,895 | INFO | __main__ | Création du graphique des résidus...
+2026-05-02 11:52:20,159 | INFO | __main__ | Graphique sauvegardé : reports/figures/residuals.png
+2026-05-02 11:52:20,159 | INFO | __main__ | Calcul de la permutation importance...
+2026-05-02 11:52:20,486 | INFO | __main__ | Importance des variables sauvegardée : reports/feature_importance.csv
+2026-05-02 11:52:20,493 | INFO | __main__ | 
+        feature  importance_mean  importance_std
+0            TV       126.809208        1.789580
+1         Radio         0.000498        0.000659
+3    Influencer        -0.000016        0.001233
+2  Social Media        -0.000976        0.000843
+2026-05-02 11:52:20,493 | INFO | __main__ | Création du graphique d'importance des variables...
+2026-05-02 11:52:20,821 | INFO | __main__ | Graphique sauvegardé : reports/figures/feature_importance.png
+2026-05-02 11:52:20,822 | INFO | __main__ | Étape 4 terminée avec succès
+2026-05-02 12:24:55,103 | INFO | api | Modèle chargé avec succès dans l'API
+2026-05-02 12:25:17,020 | INFO | api | Health check appelé
+2026-05-02 12:26:43,949 | INFO | api | Health check appelé
+2026-05-02 12:27:50,784 | INFO | api | Endpoint model-info appelé
+2026-05-02 12:30:12,528 | INFO | api | Requête reçue : TV=120.0 Radio=30.0 Social_Media=45.0 Influencer='Mega'
+2026-05-02 12:30:12,535 | INFO | api | Prédiction API réussie | prediction=426.7668, roi=2.1885
+2026-05-02 12:38:49,895 | INFO | api | Modèle chargé avec succès dans l'API
+2026-05-03 02:22:01,888 | INFO | streamlit_dashboard | Chargement du dataset dans Streamlit
+2026-05-03 02:22:01,962 | INFO | streamlit_dashboard | Chargement du modèle dans Streamlit
+2026-05-03 02:22:17,966 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:22:18,048 | INFO | streamlit_dashboard | Prédiction effectuée | TV=54.07, Radio=18.16, Social Media=3.32, Influencer=Macro, Prediction=192.45
+2026-05-03 02:22:19,991 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:22:20,055 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:24:05,727 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:24:05,771 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=18.16, Social Media=3.32, Influencer=Macro, Prediction=356.12
+2026-05-03 02:24:05,967 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:24:06,022 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:24:09,295 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:24:09,314 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=48.87, Social Media=3.32, Influencer=Macro, Prediction=356.04
+2026-05-03 02:24:09,392 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:24:09,419 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:24:17,807 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:24:17,848 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=355.89
+2026-05-03 02:24:17,992 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:24:18,030 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:24:30,048 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:24:30,059 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=48.87, Social Media=13.98, Influencer=Nano, Prediction=355.80
+2026-05-03 02:24:30,117 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:24:30,149 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:24:33,622 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:24:33,632 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=355.89
+2026-05-03 02:24:33,695 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:24:33,729 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:24:40,660 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:24:40,671 | INFO | streamlit_dashboard | Prédiction effectuée | TV=82.12, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=292.18
+2026-05-03 02:24:40,739 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:24:40,766 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:24:43,215 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:24:43,229 | INFO | streamlit_dashboard | Prédiction effectuée | TV=67.79, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=241.11
+2026-05-03 02:24:43,301 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:24:43,326 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:24:44,879 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:24:44,890 | INFO | streamlit_dashboard | Prédiction effectuée | TV=53.84, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=191.40
+2026-05-03 02:24:44,961 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:24:45,019 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:24:46,582 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:24:46,593 | INFO | streamlit_dashboard | Prédiction effectuée | TV=43.38, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=154.13
+2026-05-03 02:24:46,664 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:24:46,691 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:24:48,597 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:24:48,609 | INFO | streamlit_dashboard | Prédiction effectuée | TV=29.43, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=104.42
+2026-05-03 02:24:48,677 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:24:48,703 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:25:09,637 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:25:09,666 | INFO | streamlit_dashboard | Prédiction effectuée | TV=29.43, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=104.42
+2026-05-03 02:25:09,755 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:25:09,788 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:25:13,565 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:25:13,599 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=355.89
+2026-05-03 02:25:13,699 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:25:13,730 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:32:29,061 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:32:29,120 | INFO | streamlit_dashboard | Prédiction effectuée | TV=89.87, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=319.79
+2026-05-03 02:32:29,222 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:32:29,258 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:32:36,034 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:32:36,080 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=355.89
+2026-05-03 02:32:36,266 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:32:36,308 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:32:40,591 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:32:40,621 | INFO | streamlit_dashboard | Prédiction effectuée | TV=85.61, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=304.61
+2026-05-03 02:32:40,765 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:32:40,806 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:32:42,231 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:32:42,242 | INFO | streamlit_dashboard | Prédiction effectuée | TV=80.57, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=286.65
+2026-05-03 02:32:42,316 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:32:42,344 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:32:44,753 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:32:44,764 | INFO | streamlit_dashboard | Prédiction effectuée | TV=76.31, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=271.47
+2026-05-03 02:32:44,833 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:32:44,868 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:32:47,266 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:32:47,278 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=48.87, Social Media=13.98, Influencer=Macro, Prediction=355.89
+2026-05-03 02:32:47,347 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:32:47,384 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:32:48,964 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:32:48,974 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=44.63, Social Media=13.98, Influencer=Macro, Prediction=355.90
+2026-05-03 02:32:49,035 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:32:49,065 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:32:51,972 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:32:51,983 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=38.11, Social Media=13.98, Influencer=Macro, Prediction=355.92
+2026-05-03 02:32:52,049 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:32:52,078 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:32:56,484 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:32:56,494 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=36.64, Social Media=13.98, Influencer=Macro, Prediction=355.92
+2026-05-03 02:32:56,551 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:32:56,578 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:32:58,030 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:32:58,041 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=25.91, Social Media=13.98, Influencer=Macro, Prediction=355.95
+2026-05-03 02:32:58,108 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:32:58,133 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:00,171 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:00,185 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=16.86, Social Media=13.98, Influencer=Macro, Prediction=355.97
+2026-05-03 02:33:00,240 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:00,265 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:01,969 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:01,978 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=8.02, Social Media=13.98, Influencer=Macro, Prediction=355.99
+2026-05-03 02:33:02,045 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:02,074 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:03,813 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:03,824 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=0.00, Social Media=13.98, Influencer=Macro, Prediction=356.01
+2026-05-03 02:33:03,893 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:03,916 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:09,747 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:09,759 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=0.45, Social Media=13.98, Influencer=Macro, Prediction=356.01
+2026-05-03 02:33:09,816 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:09,846 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:11,386 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:11,397 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=1.50, Social Media=13.98, Influencer=Macro, Prediction=356.01
+2026-05-03 02:33:11,461 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:11,488 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:13,577 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:13,608 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=3.82, Social Media=13.98, Influencer=Macro, Prediction=356.00
+2026-05-03 02:33:13,716 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:13,750 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:15,291 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:15,301 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=7.81, Social Media=13.98, Influencer=Macro, Prediction=355.99
+2026-05-03 02:33:15,364 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:15,395 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:16,968 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:16,979 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=13.07, Social Media=13.98, Influencer=Macro, Prediction=355.98
+2026-05-03 02:33:17,038 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:17,064 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:18,898 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:18,909 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=16.02, Social Media=13.98, Influencer=Macro, Prediction=355.97
+2026-05-03 02:33:18,967 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:18,992 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:20,783 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:20,798 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=21.49, Social Media=13.98, Influencer=Macro, Prediction=355.96
+2026-05-03 02:33:20,864 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:20,890 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:22,364 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:22,375 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=27.17, Social Media=13.98, Influencer=Macro, Prediction=355.94
+2026-05-03 02:33:22,447 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:22,472 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:23,605 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:23,616 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=32.85, Social Media=13.98, Influencer=Macro, Prediction=355.93
+2026-05-03 02:33:23,679 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:23,706 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:33,159 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:33,172 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=32.85, Social Media=11.63, Influencer=Macro, Prediction=355.96
+2026-05-03 02:33:33,233 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:33,261 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:34,874 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:34,886 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=32.85, Social Media=9.22, Influencer=Macro, Prediction=356.00
+2026-05-03 02:33:34,948 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:34,978 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:33:36,413 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:33:36,423 | INFO | streamlit_dashboard | Prédiction effectuée | TV=100.00, Radio=32.85, Social Media=5.43, Influencer=Macro, Prediction=356.05
+2026-05-03 02:33:36,486 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:33:36,518 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:38:37,649 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:38:37,673 | INFO | streamlit_dashboard | Prédiction effectuée | TV=84.84, Radio=32.85, Social Media=5.43, Influencer=Macro, Prediction=302.03
+2026-05-03 02:38:38,107 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:38:38,161 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:38:41,656 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:38:41,693 | INFO | streamlit_dashboard | Prédiction effectuée | TV=62.36, Radio=32.85, Social Media=5.43, Influencer=Macro, Prediction=221.93
+2026-05-03 02:38:41,785 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:38:41,817 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:38:44,281 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:38:44,292 | INFO | streamlit_dashboard | Prédiction effectuée | TV=33.30, Radio=32.85, Social Media=5.43, Influencer=Macro, Prediction=118.38
+2026-05-03 02:38:44,360 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:38:44,399 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:38:46,245 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:38:46,287 | INFO | streamlit_dashboard | Prédiction effectuée | TV=11.21, Radio=32.85, Social Media=5.43, Influencer=Macro, Prediction=39.66
+2026-05-03 02:38:46,436 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:38:46,486 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:38:47,577 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:38:47,588 | INFO | streamlit_dashboard | Prédiction effectuée | TV=20.13, Radio=32.85, Social Media=5.43, Influencer=Macro, Prediction=71.45
+2026-05-03 02:38:47,664 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:38:47,702 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:38:48,980 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:38:48,990 | INFO | streamlit_dashboard | Prédiction effectuée | TV=37.18, Radio=32.85, Social Media=5.43, Influencer=Macro, Prediction=132.20
+2026-05-03 02:38:49,067 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:38:49,103 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:38:50,318 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:38:50,356 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.13, Radio=32.85, Social Media=5.43, Influencer=Macro, Prediction=181.91
+2026-05-03 02:38:50,510 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:38:50,549 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:38:51,753 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:38:51,776 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=32.85, Social Media=5.43, Influencer=Macro, Prediction=215.02
+2026-05-03 02:38:51,844 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:38:51,875 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:38:54,341 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:38:54,381 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=42.53, Social Media=5.43, Influencer=Macro, Prediction=214.99
+2026-05-03 02:38:54,553 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:38:54,589 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:38:59,831 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:38:59,864 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=45.90, Social Media=5.43, Influencer=Macro, Prediction=214.98
+2026-05-03 02:38:59,952 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:38:59,992 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:02,194 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:02,203 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=48.87, Social Media=5.43, Influencer=Macro, Prediction=214.98
+2026-05-03 02:39:02,269 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:02,297 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:03,723 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:03,733 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=48.87, Social Media=5.43, Influencer=Macro, Prediction=214.98
+2026-05-03 02:39:03,789 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:03,815 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:05,530 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:05,570 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=20.44, Social Media=5.43, Influencer=Macro, Prediction=215.05
+2026-05-03 02:39:05,678 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:05,708 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:07,394 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:07,435 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=13.07, Social Media=5.43, Influencer=Macro, Prediction=215.07
+2026-05-03 02:39:07,589 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:07,632 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:10,342 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:10,381 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=8.44, Social Media=5.43, Influencer=Macro, Prediction=215.08
+2026-05-03 02:39:10,496 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:10,526 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:12,703 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:12,714 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=3.60, Social Media=5.43, Influencer=Macro, Prediction=215.09
+2026-05-03 02:39:12,780 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:12,808 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:14,479 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:14,508 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=3.18, Social Media=5.43, Influencer=Macro, Prediction=215.09
+2026-05-03 02:39:14,623 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:14,655 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:28,584 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:28,617 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=3.18, Social Media=4.46, Influencer=Macro, Prediction=215.11
+2026-05-03 02:39:28,751 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:28,781 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:30,872 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:30,881 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=3.18, Social Media=2.42, Influencer=Macro, Prediction=215.14
+2026-05-03 02:39:30,953 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:30,991 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:33,297 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:33,308 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=3.18, Social Media=4.88, Influencer=Macro, Prediction=215.10
+2026-05-03 02:39:33,373 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:33,404 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:34,853 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:34,880 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=3.18, Social Media=6.21, Influencer=Macro, Prediction=215.08
+2026-05-03 02:39:34,981 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:35,015 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:36,103 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:36,113 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=3.18, Social Media=8.07, Influencer=Macro, Prediction=215.05
+2026-05-03 02:39:36,177 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:36,205 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:38,462 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:38,491 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=3.18, Social Media=10.18, Influencer=Macro, Prediction=215.02
+2026-05-03 02:39:38,582 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:38,610 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:54,861 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:54,901 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=3.18, Social Media=11.75, Influencer=Macro, Prediction=215.00
+2026-05-03 02:39:55,062 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:55,098 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:39:57,063 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:39:57,099 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=3.18, Social Media=13.13, Influencer=Macro, Prediction=214.98
+2026-05-03 02:39:57,225 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:39:57,257 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:40:06,645 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:40:06,657 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=11.18, Social Media=13.13, Influencer=Macro, Prediction=214.96
+2026-05-03 02:40:06,722 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:40:06,750 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-03 02:40:07,837 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-03 02:40:07,877 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=16.86, Social Media=13.13, Influencer=Macro, Prediction=214.95
+2026-05-03 02:40:08,021 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-03 02:40:08,054 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:07:59,070 | INFO | streamlit_dashboard | Chargement du dataset dans Streamlit
+2026-05-04 10:07:59,149 | INFO | streamlit_dashboard | Chargement du modèle dans Streamlit
+2026-05-04 10:08:07,182 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:08:07,209 | INFO | streamlit_dashboard | Prédiction effectuée | TV=54.07, Radio=18.16, Social Media=3.32, Influencer=Macro, Prediction=192.45
+2026-05-04 10:08:08,894 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:08:08,962 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:08:12,157 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:08:12,164 | INFO | streamlit_dashboard | Prédiction effectuée | TV=54.07, Radio=31.80, Social Media=3.32, Influencer=Macro, Prediction=192.41
+2026-05-04 10:08:12,239 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:08:12,264 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:08:33,451 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:08:33,460 | INFO | streamlit_dashboard | Prédiction effectuée | TV=54.07, Radio=31.80, Social Media=11.02, Influencer=Macro, Prediction=192.30
+2026-05-04 10:08:33,534 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:08:33,557 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:13:49,771 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:13:49,780 | INFO | streamlit_dashboard | Prédiction effectuée | TV=70.11, Radio=31.80, Social Media=11.02, Influencer=Macro, Prediction=249.47
+2026-05-04 10:13:49,858 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:13:49,885 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:13:51,274 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:13:51,282 | INFO | streamlit_dashboard | Prédiction effectuée | TV=80.96, Radio=31.80, Social Media=11.02, Influencer=Macro, Prediction=288.13
+2026-05-04 10:13:51,358 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:13:51,394 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:13:52,373 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:13:52,383 | INFO | streamlit_dashboard | Prédiction effectuée | TV=97.24, Radio=31.80, Social Media=11.02, Influencer=Macro, Prediction=346.14
+2026-05-04 10:13:52,452 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:13:52,478 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:13:54,956 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:13:54,966 | INFO | streamlit_dashboard | Prédiction effectuée | TV=87.55, Radio=31.80, Social Media=11.02, Influencer=Macro, Prediction=311.61
+2026-05-04 10:13:55,039 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:13:55,066 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:13:55,903 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:13:55,919 | INFO | streamlit_dashboard | Prédiction effectuée | TV=79.02, Radio=31.80, Social Media=11.02, Influencer=Macro, Prediction=281.22
+2026-05-04 10:13:55,990 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:13:56,020 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:13:56,818 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:13:56,827 | INFO | streamlit_dashboard | Prédiction effectuée | TV=67.40, Radio=31.80, Social Media=11.02, Influencer=Macro, Prediction=239.81
+2026-05-04 10:13:56,901 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:13:56,928 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:13:58,104 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:13:58,116 | INFO | streamlit_dashboard | Prédiction effectuée | TV=57.32, Radio=31.80, Social Media=11.02, Influencer=Macro, Prediction=203.89
+2026-05-04 10:13:58,194 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:13:58,217 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:13:59,727 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:13:59,736 | INFO | streamlit_dashboard | Prédiction effectuée | TV=35.63, Radio=31.80, Social Media=11.02, Influencer=Macro, Prediction=126.60
+2026-05-04 10:13:59,803 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:13:59,831 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:00,609 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:00,619 | INFO | streamlit_dashboard | Prédiction effectuée | TV=23.23, Radio=31.80, Social Media=11.02, Influencer=Macro, Prediction=82.42
+2026-05-04 10:14:00,691 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:00,719 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:04,679 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:04,689 | INFO | streamlit_dashboard | Prédiction effectuée | TV=23.23, Radio=48.87, Social Media=11.02, Influencer=Macro, Prediction=82.37
+2026-05-04 10:14:04,752 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:04,782 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:07,970 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:07,979 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=48.87, Social Media=11.02, Influencer=Macro, Prediction=184.53
+2026-05-04 10:14:08,044 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:08,072 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:10,050 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:10,058 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=10.13, Social Media=11.02, Influencer=Macro, Prediction=184.63
+2026-05-04 10:14:10,128 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:10,154 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:11,625 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:11,634 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=10.13, Social Media=0.00, Influencer=Macro, Prediction=184.79
+2026-05-04 10:14:11,699 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:11,733 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:14,544 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:14,552 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=21.91, Social Media=0.00, Influencer=Macro, Prediction=184.76
+2026-05-04 10:14:14,620 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:14,653 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:19,037 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:19,046 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=38.74, Social Media=0.00, Influencer=Macro, Prediction=184.72
+2026-05-04 10:14:19,119 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:19,145 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:21,061 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:21,072 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=0.00, Influencer=Macro, Prediction=184.70
+2026-05-04 10:14:21,149 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:21,175 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:24,607 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:24,615 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=2.36, Influencer=Macro, Prediction=184.66
+2026-05-04 10:14:24,678 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:24,707 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:25,815 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:25,825 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=4.76, Influencer=Macro, Prediction=184.63
+2026-05-04 10:14:25,895 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:25,921 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:27,731 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:27,740 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=9.82, Influencer=Macro, Prediction=184.56
+2026-05-04 10:14:27,800 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:27,825 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:28,987 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:28,997 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=11.87, Influencer=Macro, Prediction=184.53
+2026-05-04 10:14:29,058 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:29,082 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:30,218 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:30,228 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=13.55, Influencer=Macro, Prediction=184.50
+2026-05-04 10:14:30,287 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:30,314 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:31,825 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:31,836 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=11.20, Influencer=Macro, Prediction=184.54
+2026-05-04 10:14:31,894 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:31,919 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:33,089 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:33,097 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=9.70, Influencer=Macro, Prediction=184.56
+2026-05-04 10:14:33,166 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:33,191 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:34,181 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:34,189 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=8.32, Influencer=Macro, Prediction=184.58
+2026-05-04 10:14:34,249 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:34,274 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:14:35,098 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:14:35,110 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=6.99, Influencer=Macro, Prediction=184.60
+2026-05-04 10:14:35,178 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:14:35,202 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:21:06,372 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:21:06,384 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=8.86, Influencer=Macro, Prediction=184.57
+2026-05-04 10:21:06,470 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:21:06,493 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:21:07,244 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:21:07,258 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=9.70, Influencer=Macro, Prediction=184.56
+2026-05-04 10:21:07,332 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:21:07,374 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:21:08,362 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:21:08,372 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=10.60, Influencer=Macro, Prediction=184.54
+2026-05-04 10:21:08,434 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:21:08,460 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:21:09,238 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:21:09,249 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=11.99, Influencer=Macro, Prediction=184.52
+2026-05-04 10:21:09,311 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:21:09,334 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:21:10,165 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:21:10,176 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=13.07, Influencer=Macro, Prediction=184.51
+2026-05-04 10:21:10,234 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:21:10,256 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:21:11,132 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:21:11,141 | INFO | streamlit_dashboard | Prédiction effectuée | TV=51.90, Radio=47.16, Social Media=13.73, Influencer=Macro, Prediction=184.50
+2026-05-04 10:21:11,199 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:21:11,221 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:24:44,680 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:24:44,697 | INFO | streamlit_dashboard | Prédiction effectuée | TV=59.65, Radio=47.16, Social Media=13.73, Influencer=Macro, Prediction=212.12
+2026-05-04 10:24:44,770 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:24:44,795 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:24:45,651 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:24:45,661 | INFO | streamlit_dashboard | Prédiction effectuée | TV=68.17, Radio=47.16, Social Media=13.73, Influencer=Macro, Prediction=242.47
+2026-05-04 10:24:45,721 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:24:45,749 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:24:48,730 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:24:48,738 | INFO | streamlit_dashboard | Prédiction effectuée | TV=84.45, Radio=47.16, Social Media=13.73, Influencer=Macro, Prediction=300.49
+2026-05-04 10:24:48,802 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:24:48,835 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:24:51,309 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:24:51,319 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=47.16, Social Media=13.73, Influencer=Macro, Prediction=214.86
+2026-05-04 10:24:51,385 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:24:51,409 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:24:53,988 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:24:53,997 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=23.59, Social Media=13.73, Influencer=Macro, Prediction=214.92
+2026-05-04 10:24:54,055 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:24:54,080 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:25:03,514 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:25:03,523 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=39.58, Social Media=13.73, Influencer=Macro, Prediction=214.88
+2026-05-04 10:25:03,583 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:25:03,605 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:25:06,694 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:25:06,703 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=43.58, Social Media=13.73, Influencer=Macro, Prediction=214.87
+2026-05-04 10:25:06,768 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:25:06,796 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:25:07,974 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:25:07,983 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=46.32, Social Media=13.73, Influencer=Macro, Prediction=214.86
+2026-05-04 10:25:08,044 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:25:08,067 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:25:20,298 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:25:20,314 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=35.59, Social Media=13.73, Influencer=Macro, Prediction=214.89
+2026-05-04 10:25:20,389 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:25:20,410 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:25:23,993 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:25:24,004 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=35.59, Social Media=10.00, Influencer=Macro, Prediction=214.94
+2026-05-04 10:25:24,073 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:25:24,130 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:25:25,662 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:25:25,674 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=35.59, Social Media=6.93, Influencer=Macro, Prediction=214.99
+2026-05-04 10:25:25,750 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:25:25,777 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:25:26,921 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:25:26,934 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=35.59, Social Media=5.31, Influencer=Macro, Prediction=215.01
+2026-05-04 10:25:27,031 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:25:27,064 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:25:29,641 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:25:29,649 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=35.59, Social Media=3.26, Influencer=Macro, Prediction=215.04
+2026-05-04 10:25:29,708 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:25:29,732 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:25:32,224 | INFO | streamlit_dashboard | Dashboard lancé avec succès
+2026-05-04 10:25:32,238 | INFO | streamlit_dashboard | Prédiction effectuée | TV=60.42, Radio=35.59, Social Media=1.69, Influencer=Macro, Prediction=215.06
+2026-05-04 10:25:32,314 | INFO | streamlit_dashboard | Chargement du fichier : reports\model_comparison.csv
+2026-05-04 10:25:32,349 | INFO | streamlit_dashboard | Chargement du fichier : reports\feature_importance.csv
+2026-05-04 10:31:03,105 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=54.06, Radio=18.16, Social Media=3.32, Influencer=Macro, Sales=192.43, ROI=2.547
+2026-05-04 10:31:20,310 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=54.06, Radio=23.59, Social Media=3.32, Influencer=Macro, Sales=192.42, ROI=2.376
+2026-05-04 10:31:21,596 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=54.06, Radio=31.17, Social Media=3.32, Influencer=Macro, Sales=192.40, ROI=2.173
+2026-05-04 10:31:22,494 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=54.06, Radio=38.11, Social Media=3.32, Influencer=Macro, Sales=192.38, ROI=2.015
+2026-05-04 10:31:23,804 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=54.06, Radio=43.58, Social Media=3.32, Influencer=Macro, Sales=192.37, ROI=1.905
+2026-05-04 10:31:26,328 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=43.58, Social Media=3.32, Influencer=Macro, Sales=35.35, ROI=0.621
+2026-05-04 10:31:27,467 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=1.50, Social Media=3.32, Influencer=Macro, Sales=35.46, ROI=2.392
+2026-05-04 10:31:28,712 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=0.00, Social Media=3.32, Influencer=Macro, Sales=35.47, ROI=2.662
+2026-05-04 10:31:29,786 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=2.55, Social Media=3.32, Influencer=Macro, Sales=35.46, ROI=2.234
+2026-05-04 10:31:30,789 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=7.81, Social Media=3.32, Influencer=Macro, Sales=35.45, ROI=1.677
+2026-05-04 10:31:32,542 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=17.70, Social Media=3.32, Influencer=Macro, Sales=35.42, ROI=1.142
+2026-05-04 10:31:33,284 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=32.85, Social Media=3.32, Influencer=Macro, Sales=35.38, ROI=0.766
+2026-05-04 10:31:35,027 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=41.90, Social Media=3.32, Influencer=Macro, Sales=35.36, ROI=0.640
+2026-05-04 10:31:36,554 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=41.90, Social Media=7.29, Influencer=Macro, Sales=35.30, ROI=0.596
+2026-05-04 10:31:37,911 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=41.90, Social Media=9.76, Influencer=Macro, Sales=35.27, ROI=0.572
+2026-05-04 10:31:39,923 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=41.90, Social Media=12.23, Influencer=Macro, Sales=35.23, ROI=0.549
+2026-05-04 10:31:41,366 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=41.90, Social Media=13.73, Influencer=Macro, Sales=35.21, ROI=0.536
+2026-05-04 10:31:42,760 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=41.90, Social Media=10.36, Influencer=Macro, Sales=35.26, ROI=0.566
+2026-05-04 10:31:51,423 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=41.90, Social Media=9.58, Influencer=Macro, Sales=35.27, ROI=0.574
+2026-05-04 10:31:52,462 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=41.90, Social Media=8.92, Influencer=Macro, Sales=35.28, ROI=0.580
+2026-05-04 10:31:53,098 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=41.90, Social Media=5.85, Influencer=Macro, Sales=35.32, ROI=0.612
+2026-05-04 10:33:23,995 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=41.90, Social Media=5.85, Influencer=Macro, Sales=35.32, ROI=0.612
+2026-05-04 10:34:12,178 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=41.90, Social Media=5.85, Influencer=Macro, Sales=35.32, ROI=0.612
+2026-05-04 10:34:45,566 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=41.90, Social Media=5.85, Influencer=Macro, Sales=35.32, ROI=0.612
+2026-05-04 10:34:48,727 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=41.90, Social Media=5.85, Influencer=Macro, Sales=35.32, ROI=0.612
+2026-05-04 10:34:52,725 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=10.00, Radio=41.90, Social Media=5.85, Influencer=Macro, Sales=35.32, ROI=0.612
+2026-05-04 11:17:01,553 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=14.70, Radio=41.90, Social Media=5.85, Influencer=Macro, Sales=52.07, ROI=0.834
+2026-05-04 11:17:03,268 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=22.06, Radio=41.90, Social Media=5.85, Influencer=Macro, Sales=78.30, ROI=1.122
+2026-05-04 11:17:04,593 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=28.26, Radio=41.90, Social Media=5.85, Influencer=Macro, Sales=100.39, ROI=1.321
+2026-05-04 11:17:05,544 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=35.63, Radio=41.90, Social Media=5.85, Influencer=Macro, Sales=126.65, ROI=1.519
+2026-05-04 11:17:07,519 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=45.31, Radio=41.90, Social Media=5.85, Influencer=Macro, Sales=161.14, ROI=1.732
+2026-05-04 11:17:12,198 | INFO | streamlit_dashboard | Prédiction Streamlit | TV=53.84, Radio=41.90, Social Media=5.85, Influencer=Macro, Sales=191.54, ROI=1.885
